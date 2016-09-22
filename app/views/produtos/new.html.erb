@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/assets/form.css">
+<link rel="stylesheet" href="/css/master.css" media="screen" title="no title">
+<script src="assets/javasripts/myscripts.js"></script>
+
+<h1>Adicionar</h1>
+<%= form_for @produto do |f| %>
+    <div class="form" name="form">
+        <%= f.label :nome %>
+        <div class="input">
+            <%= f.text_field :nome %>
+        </div>
+        <%= f.label :preço %>
+        <div class="input">
+            <%= f.text_field :preco %>
+        </div>
+        <%= f.label :qtd %>
+        <div class="input">
+            <%= f.text_field :qtd %>
+        </div>
+        <%= f.label :tipo %>
+        <div class="input">
+            <%= f.text_field :tipo %>
+        </div>
+        <%= f.submit %>
+    </div>
+<% end %>

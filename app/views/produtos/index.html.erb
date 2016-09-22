@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="Negocia">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="initial-scale=1, maximum-scale=1, width=device-width"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/produtos.css">
+    <title>Negocia Já</title>
+  </head>
+
+  <body>
+      <header>
+        <h1>Negocia Já</h1>
+        <h2>Uma plataforma para comprar e vender produtos</h2>
+      </header>
+
+      <section>
+        <ul class="nav nav-tabs">
+          <li><a data-toggle="tab" href="#compra">Itens Anunciados</a></li>
+          <li class="active"><a data-toggle="tab" href="#venda">Meus Anúncios</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="compra" class="tab-pane fade">
+            <h3>Produtos</h3>
+            <div class="table-responsive">
+              <table class="table table-striped">
+              <tr>
+                <th>Código da Produto</th>
+                <th>Nome da Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Tipo da Produto</th>
+              </tr>
+
+              <% @produtos.each do |produto| %>
+                <tr>
+                  <td><%= produto.id %></td>
+                  <td><%= produto.nome %></td>
+                  <td><%= produto.preco %></td>
+                  <td><%= produto.qtd %></td>
+                  <td><%= produto.tipo%></td>
+                </tr>
+              <% end %>
+
+            </table>
+            </div>
+          </div>
+          <div id="venda" class="tab-pane fade in active">
+            <h3>Produtos</h3>
+            <div class="table-responsive">
+              <table class="table table-striped">
+              <tr>
+                <th>Código da Produto</th>
+                <th>Nome da Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Tipo da Produto</th>
+                <th>Operação</th>
+              </tr>
+
+              <% @produtos.each do |produto| %>
+                <tr>
+                  <td><%= produto.id %></td>
+                  <td><%= produto.nome %></td>
+                  <td><%= produto.preco %></td>
+                  <td><%= produto.qtd %></td>
+                  <td><%= produto.tipo%></td>
+                  <td>
+                    <%= link_to "Editar", produto_path(produto) %>
+                    <%= link_to 'Excluir', produto_path(produto.id),
+                        method: :delete,
+                        data: { confirm: 'Você está certo disso?' }
+                        %>
+                  </td>
+                </tr>
+              <% end %>
+            </table>
+            </div>
+            <%= link_to 'Colocar produto a venda', new_produto_path %>
+
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <h2>Contato</h2>
+        <ul>
+            <li>
+                <a href="tel:15981219298"><span class="fa fa-whatsapp"></span></a>
+            </li>
+            <li>
+                <a href="mailto:vitormd97@gmail.com"><span class="fa fa-envelope"></span></a>
+            </li>
+            <li>
+              <a href = "https://github.com/Vitormdias" target = "_blank"><span class="fa fa-github-square"></span></a>
+            </li>
+            <li>
+              <a href = "https://linkedin.com/" target = "_blank" ><span class="fa fa-linkedin-square"></span></a>
+            </li>
+        </ul>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod: 1
+  nome: MyText
+  preco: 9.99
+  qtd: 1
+  tipo: MyText
+
+two:
+  cod: 1
+  nome: MyText
+  preco: 9.99
+  qtd: 1
+  tipo: MyText
