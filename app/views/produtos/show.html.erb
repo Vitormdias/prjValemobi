@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="/assets/stylesheets/form.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<h1>Editar</h1>
+<h1 id="edit">Editar</h1>
 <%= form_for @produto do |f| %>
     <div class="form">
         <%= f.label :nome %>
@@ -19,6 +22,6 @@
         <div class="input">
             <%= f.text_field :tipo %>
         </div>
-        <%= f.submit %>
+        <input type="submit" name="commit" value="Atualizar Produto" class="btn btn-primary btn-md">
     </div>
 <% end %>

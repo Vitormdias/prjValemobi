@@ -25,9 +25,9 @@ class ProdutosController < ApplicationController
     @produto.qtd.to_i
 
     if @produto.save
-      redirect_to '#'
+      redirect_to :root
     else
-      render html: 'new'
+      redirect_to :back
     end
   end
 
@@ -36,7 +36,7 @@ class ProdutosController < ApplicationController
     if @produto.update(produto_params)
       redirect_to :root
     else
-      render html: 'show'
+      redirect_to :back
     end
   end
 

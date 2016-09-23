@@ -1,13 +1,19 @@
 @import "https://fonts.googleapis.com/css?family=Bree+Serif";
-
-
 * {
+    color: rgb(124, 138, 189);
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Bree Serif', serif;
+}
+
+table {
+  text-align: center;
+  th {
+    text-align: center;
+  }
 }
 
 body {
@@ -67,27 +73,32 @@ header {
   text-align: center;
   background-attachment: fixed;
   background:  rgba(187, 201, 250, 0.3);
-  background: -webkit-linear-gradient(to top,  rgba(187, 201, 250, 0.3) , #ffffff); 
+  background: -webkit-linear-gradient(to top,  rgba(187, 201, 250, 0.3) , #ffffff);
   background: linear-gradient(to top,  rgba(187, 201, 250, 0.3) , #ffffff);
 
 }
 
 footer {
   display: flex;
+  text-align: center;
   flex-flow: column;
   background-color: rgba(187, 201, 250, 0.3);
   h2 {
     margin: 20px auto;
     color: rgb(124, 138, 189);
     display: block;
+    text-align: center;
   }
   ul {
     display: flex;
+    text-align: center;
     list-style-type: none;
     margin: 20px auto;
     li {
+      position: relative;
+      text-align: center;
       font-size: 26px;
-      margin: auto 10px;
+      margin:inherit;
     }
   }
 }

@@ -10,7 +10,17 @@
     font-family: 'Bree Serif', serif;
 }
 
-.form {
+#add {
+  font-family: 'Bree Serif', serif;
+  color: rgb(124, 138, 189);
+}
+
+#edit {
+  font-family: 'Bree Serif', serif;
+  color: rgb(124, 138, 189);
+}
+
+form {
   background-attachment: fixed;
   background:  rgba(187, 201, 250, 0.3);
   background: -webkit-linear-gradient(to top,  rgba(187, 201, 250, 0.3) , #ffffff);
@@ -27,4 +37,8 @@
 
 footer {
   background-color: rgba(187, 201, 250, 0.3);
+}
+
+.btn btn-primary{
+  color: rgba(223, 226, 237, 0.3);
 }
