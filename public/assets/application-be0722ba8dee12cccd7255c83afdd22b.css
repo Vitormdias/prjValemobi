@@ -1,0 +1,185 @@
+@import "https://fonts.googleapis.com/css?family=Bree+Serif";
+/* line 2, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+* {
+  color: #7c8abd;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Bree Serif', serif;
+}
+
+/* line 13, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+#add {
+  font-family: 'Bree Serif', serif;
+  color: #7c8abd;
+}
+
+/* line 18, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+#edit {
+  font-family: 'Bree Serif', serif;
+  color: #7c8abd;
+}
+
+/* line 23, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+form {
+  background-attachment: fixed;
+  background: rgba(187, 201, 250, 0.3);
+  background: -webkit-linear-gradient(to top, rgba(187, 201, 250, 0.3), white);
+  background: linear-gradient(to top, rgba(187, 201, 250, 0.3), white);
+  margin: 20px auto;
+}
+
+/* line 31, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* line 38, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+footer {
+  background-color: rgba(187, 201, 250, 0.3);
+}
+
+/* line 42, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/form.css.scss */
+.btn btn-primary {
+  color: rgba(223, 226, 237, 0.3);
+}
+@import "https://fonts.googleapis.com/css?family=Bree+Serif";
+/* line 2, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+* {
+  color: #7c8abd;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Bree Serif', serif;
+}
+
+/* line 12, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+table {
+  text-align: center;
+}
+/* line 14, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+table th {
+  text-align: center;
+}
+
+/* line 19, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 22, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+body .container {
+  padding-top: 60px;
+}
+
+/* line 28, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+a {
+  text-decoration: none;
+  color: #bbc9fa;
+}
+
+/* line 33, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 37, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+section {
+  padding: 4vh 2vw;
+}
+
+/* line 42, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+h1 {
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50;
+  z-index: 2;
+  color: #606d9d;
+  letter-spacing: 1px;
+}
+
+/* line 52, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #606d9d;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+/* line 61, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+h3 {
+  font-size: 1.75rem;
+}
+
+/* line 65, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+li {
+  font-size: 1.75rem;
+}
+
+/* line 69, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+header {
+  min-width: 100vw;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  background-attachment: fixed;
+  background: rgba(187, 201, 250, 0.3);
+  background: -webkit-linear-gradient(to top, rgba(187, 201, 250, 0.3), white);
+  background: linear-gradient(to top, rgba(187, 201, 250, 0.3), white);
+}
+
+/* line 81, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+footer {
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  background-color: rgba(187, 201, 250, 0.3);
+}
+/* line 86, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+footer h2 {
+  margin: 20px auto;
+  color: #7c8abd;
+  display: block;
+  text-align: center;
+}
+/* line 92, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+footer ul {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  margin: 20px auto;
+}
+/* line 97, /home/vitor/PROGRAMACAO/prjValemobi/app/assets/stylesheets/produtos.css.scss */
+footer ul li {
+  position: relative;
+  text-align: center;
+  font-size: 26px;
+  margin: inherit;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
