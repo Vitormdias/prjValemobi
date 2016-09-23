@@ -1,7 +1,12 @@
 == README
 
 Implementção de um plataforma de negociação de mercadorias.
+
+
+
 Utilizando Ruby on Rails e PostgreSQL
 
+
+
 Pode ser acessado em:
-https://prjvalemobi.herokuapp.com/
+https://prjvalemobi.herokuapp.com
