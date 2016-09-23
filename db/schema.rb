@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160922005353) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "carrinhos", force: true do |t|
     t.integer  "cod"
     t.text     "nome"
