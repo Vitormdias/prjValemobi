@@ -1,6 +1,6 @@
 == README
 
-Implementção de um plataforma de negociação de mercadorias.
+Implementção de um plataforma de venda de mercadorias.
 
 
 
